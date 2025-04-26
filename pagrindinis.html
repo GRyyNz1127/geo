@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klimato kaita Kuboje - Pagrindinis</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        header {
+            background-color: #2e7d32;
+        }
+        
+        .hero {
+            background-image: url('../images/main_page_background.png');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #1b5e20;
+            transform: translateY(-3px);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .section-title h2 {
+            color: #2e7d32;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: #2e7d32;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card-content h3 {
+            margin-bottom: 1rem;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">Klimato kaita Kuboje</a>
+                <nav>
+                    <ul>
+                        <li><a href="pagrindinis.html">Pagrindinis</a></li>
+                        <li><a href="#">Apie Kubą</a></li>
+                        <li><a href="#">Klimato kaita</a></li>
+                        <li><a href="#">Poveikis</a></li>
+                        <li><a href="#">Sprendimai</a></li>
+                        <li><a href="#">Švietimas</a></li>
+                        <li><a href="#">Sužinoti daugiau</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Klimato kaitos iššūkiai Kuboje</h1>
+            <p>Sužinokite apie klimato kaitos poveikį Kubos salai, jos gyventojams ir ekosistemoms. Tyrinėkite iššūkius ir sprendimus kovojant su klimato kaita.</p>
+            <a href="#" class="btn">Sužinoti daugiau</a>
+        </section>
+        
+        <section class="container section">
+            <div class="section-title">
+                <h2>Pagrindiniai iššūkiai</h2>
+            </div>
+            
+            <div class="cards">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../images/photo-1584415326659-a6a153c07e32" alt="Jūros lygio kilimas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Jūros lygio kilimas</h3>
+                        <p>Kylantis jūros lygis kelia grėsmę Kubos pakrantėms ir pakrančių bendruomenėms, sukeldamas eroziją ir potvynius.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ekstremalūs orai">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ekstremalūs orai</h3>
+                        <p>Stiprėjančios audros ir uraganai daro vis didesnę žalą Kubos infrastruktūrai ir žemės ūkiui.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Koralų rifų nykimas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Koralų rifų nykimas</h3>
+                        <p>Šiltėjantys vandenynai ir rūgštėjimas kelia grėsmę Kubos koralų rifams, kurie yra svarbūs biologinei įvairovei ir turizmui.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Klimato kaita Kuboje. Visos teisės saugomos.</p>
+        </div>
+    </footer>
+    
+    <footer-btn></footer-btn>
+    
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
